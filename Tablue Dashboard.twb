@@ -1,0 +1,1694 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='complaints_Full Data+' inline='true' name='federated.0ywrv5d14jgfr3128e8pb0oj93sj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='complaints_Full Data' name='textscan.1819h27102gt3d0zy2bkf035biw4'>
+            <connection class='textscan' directory='C:/Users/anjal/Downloads' filename='complaints_Full Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[complaints_Full Data.csv].[State]' />
+              <expression op='[State Map_Full Data.csv].[Abbreviation]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.1819h27102gt3d0zy2bkf035biw4' name='complaints_Full Data.csv' table='[complaints_Full Data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Company' ordinal='0' />
+              <column datatype='string' name='Company public response' ordinal='1' />
+              <column datatype='string' name='Company response to consumer' ordinal='2' />
+              <column datatype='integer' name='Complaint ID' ordinal='3' />
+              <column datatype='string' name='Consumer consent provided?' ordinal='4' />
+              <column datatype='string' name='Consumer disputed?' ordinal='5' />
+              <column datatype='date' name='Date Received' ordinal='6' />
+              <column datatype='date' name='Date Submitted' ordinal='7' />
+              <column datatype='string' name='Issue' ordinal='8' />
+              <column datatype='string' name='Product' ordinal='9' />
+              <column datatype='string' name='State' ordinal='10' />
+              <column datatype='string' name='Sub-issue' ordinal='11' />
+              <column datatype='string' name='Sub-product' ordinal='12' />
+              <column datatype='string' name='Submitted via' ordinal='13' />
+              <column datatype='string' name='Tags' ordinal='14' />
+              <column datatype='string' name='Timely response?' ordinal='15' />
+              <column datatype='string' name='ZIP code' ordinal='16' />
+              <column datatype='integer' name='All Complaints (Selected)' ordinal='17' />
+              <column datatype='integer' name='Number of Complaints' ordinal='18' />
+              <column datatype='integer' name='Target' ordinal='19' />
+              <column datatype='integer' name='Time to Receipt' ordinal='20' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1819h27102gt3d0zy2bkf035biw4' name='State Map_Full Data.csv' table='[State Map_Full Data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Abbreviation' ordinal='0' />
+              <column datatype='string' name='State' ordinal='1' />
+              <column datatype='integer' name='Number of Records' ordinal='2' />
+              <column datatype='integer' name='One' ordinal='3' />
+              <column datatype='real' name='Random' ordinal='4' />
+              <column datatype='integer' name='Row' ordinal='5' />
+              <column datatype='integer' name='Space' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[complaints_Full Data.csv].[State]' />
+              <expression op='[State Map_Full Data.csv].[Abbreviation]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.1819h27102gt3d0zy2bkf035biw4' name='complaints_Full Data.csv' table='[complaints_Full Data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Company' ordinal='0' />
+              <column datatype='string' name='Company public response' ordinal='1' />
+              <column datatype='string' name='Company response to consumer' ordinal='2' />
+              <column datatype='integer' name='Complaint ID' ordinal='3' />
+              <column datatype='string' name='Consumer consent provided?' ordinal='4' />
+              <column datatype='string' name='Consumer disputed?' ordinal='5' />
+              <column datatype='date' name='Date Received' ordinal='6' />
+              <column datatype='date' name='Date Submitted' ordinal='7' />
+              <column datatype='string' name='Issue' ordinal='8' />
+              <column datatype='string' name='Product' ordinal='9' />
+              <column datatype='string' name='State' ordinal='10' />
+              <column datatype='string' name='Sub-issue' ordinal='11' />
+              <column datatype='string' name='Sub-product' ordinal='12' />
+              <column datatype='string' name='Submitted via' ordinal='13' />
+              <column datatype='string' name='Tags' ordinal='14' />
+              <column datatype='string' name='Timely response?' ordinal='15' />
+              <column datatype='string' name='ZIP code' ordinal='16' />
+              <column datatype='integer' name='All Complaints (Selected)' ordinal='17' />
+              <column datatype='integer' name='Number of Complaints' ordinal='18' />
+              <column datatype='integer' name='Target' ordinal='19' />
+              <column datatype='integer' name='Time to Receipt' ordinal='20' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1819h27102gt3d0zy2bkf035biw4' name='State Map_Full Data.csv' table='[State Map_Full Data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Abbreviation' ordinal='0' />
+              <column datatype='string' name='State' ordinal='1' />
+              <column datatype='integer' name='Number of Records' ordinal='2' />
+              <column datatype='integer' name='One' ordinal='3' />
+              <column datatype='real' name='Random' ordinal='4' />
+              <column datatype='integer' name='Row' ordinal='5' />
+              <column datatype='integer' name='Space' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Abbreviation]' value='[State Map_Full Data.csv].[Abbreviation]' />
+          <map key='[All Complaints (Selected)]' value='[complaints_Full Data.csv].[All Complaints (Selected)]' />
+          <map key='[Company public response]' value='[complaints_Full Data.csv].[Company public response]' />
+          <map key='[Company response to consumer]' value='[complaints_Full Data.csv].[Company response to consumer]' />
+          <map key='[Company]' value='[complaints_Full Data.csv].[Company]' />
+          <map key='[Complaint ID]' value='[complaints_Full Data.csv].[Complaint ID]' />
+          <map key='[Consumer consent provided?]' value='[complaints_Full Data.csv].[Consumer consent provided?]' />
+          <map key='[Consumer disputed?]' value='[complaints_Full Data.csv].[Consumer disputed?]' />
+          <map key='[Date Received]' value='[complaints_Full Data.csv].[Date Received]' />
+          <map key='[Date Submitted]' value='[complaints_Full Data.csv].[Date Submitted]' />
+          <map key='[Issue]' value='[complaints_Full Data.csv].[Issue]' />
+          <map key='[Number of Complaints]' value='[complaints_Full Data.csv].[Number of Complaints]' />
+          <map key='[Number of Records]' value='[State Map_Full Data.csv].[Number of Records]' />
+          <map key='[One]' value='[State Map_Full Data.csv].[One]' />
+          <map key='[Product]' value='[complaints_Full Data.csv].[Product]' />
+          <map key='[Random]' value='[State Map_Full Data.csv].[Random]' />
+          <map key='[Row]' value='[State Map_Full Data.csv].[Row]' />
+          <map key='[Space]' value='[State Map_Full Data.csv].[Space]' />
+          <map key='[State (State Map_Full Data.csv)]' value='[State Map_Full Data.csv].[State]' />
+          <map key='[State]' value='[complaints_Full Data.csv].[State]' />
+          <map key='[Sub-issue]' value='[complaints_Full Data.csv].[Sub-issue]' />
+          <map key='[Sub-product]' value='[complaints_Full Data.csv].[Sub-product]' />
+          <map key='[Submitted via]' value='[complaints_Full Data.csv].[Submitted via]' />
+          <map key='[Tags]' value='[complaints_Full Data.csv].[Tags]' />
+          <map key='[Target]' value='[complaints_Full Data.csv].[Target]' />
+          <map key='[Time to Receipt]' value='[complaints_Full Data.csv].[Time to Receipt]' />
+          <map key='[Timely response?]' value='[complaints_Full Data.csv].[Timely response?]' />
+          <map key='[ZIP code]' value='[complaints_Full Data.csv].[ZIP code]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company public response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company public response]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Company public response</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company response to consumer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company response to consumer]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Company response to consumer</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complaint ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Complaint ID]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Complaint ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumer consent provided?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Consumer consent provided?]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Consumer consent provided?</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumer disputed?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Consumer disputed?]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Consumer disputed?</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Received</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Received]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Date Received</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Submitted</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Submitted]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Date Submitted</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Issue]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Issue</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-issue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub-issue]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Sub-issue</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub-product]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Sub-product</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Submitted via</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Submitted via]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Submitted via</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tags]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Tags</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timely response?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Timely response?]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Timely response?</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIP code]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>ZIP code</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All Complaints (Selected)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All Complaints (Selected)]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>All Complaints (Selected)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Complaints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Complaints]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Number of Complaints</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time to Receipt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time to Receipt]</local-name>
+            <parent-name>[complaints_Full Data.csv]</parent-name>
+            <remote-alias>Time to Receipt</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abbreviation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abbreviation]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>Abbreviation</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State (State Map_Full Data.csv)]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>One</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[One]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>One</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Random</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Random]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>Random</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>Row</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Space</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Space]</local-name>
+            <parent-name>[State Map_Full Data.csv]</parent-name>
+            <remote-alias>Space</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Complaints]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Product Group]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Product]' new-bin='true'>
+          <bin default-name='false' value='&quot;BANK SERVICES&quot;'>
+            <value>&quot;Bank account or service&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;CHECKING/SERVICES&quot;'>
+            <value>&quot;Checking or savings account&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;CREDIT CARD&quot;'>
+            <value>&quot;Credit card&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;MORTGAGE&quot;'>
+            <value>&quot;Mortgages&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;OTHERS&quot;'>
+            <value>&quot;Credit card or prepaid card&quot;</value>
+            <value>&quot;Debt Collection&quot;</value>
+            <value>&quot;Student loan&quot;</value>
+            <value>&quot;Vehicle loan or lease&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+      <column caption='State (State Map Full Data.csv)' datatype='string' name='[State (State Map_Full Data.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[ZIP code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='complaints_Full Data.csv' datatype='table' name='[__tableau_internal_object_id__].[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]' role='measure' type='quantitative' />
+      <column-instance column='[Number of Complaints]' derivation='Sum' name='[diff:sum:Number of Complaints:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Number of Complaints]' derivation='Sum' name='[pcto:sum:Number of Complaints:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/anjal/AppData/Local/Temp/TableauTemp/#TableauTemp_0uvjtoz09locij10ipd9e11fbvhg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/18/2025 05:49:46 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Abbreviation]' value='[Extract].[Abbreviation]' />
+            <map key='[All Complaints (Selected)]' value='[Extract].[All Complaints (Selected)]' />
+            <map key='[Company public response]' value='[Extract].[Company public response]' />
+            <map key='[Company response to consumer]' value='[Extract].[Company response to consumer]' />
+            <map key='[Company]' value='[Extract].[Company]' />
+            <map key='[Complaint ID]' value='[Extract].[Complaint ID]' />
+            <map key='[Consumer consent provided?]' value='[Extract].[Consumer consent provided?]' />
+            <map key='[Consumer disputed?]' value='[Extract].[Consumer disputed?]' />
+            <map key='[Date Received]' value='[Extract].[Date Received]' />
+            <map key='[Date Submitted]' value='[Extract].[Date Submitted]' />
+            <map key='[Issue]' value='[Extract].[Issue]' />
+            <map key='[Number of Complaints]' value='[Extract].[Number of Complaints]' />
+            <map key='[Number of Records]' value='[Extract].[Number of Records]' />
+            <map key='[One]' value='[Extract].[One]' />
+            <map key='[Product]' value='[Extract].[Product]' />
+            <map key='[Random]' value='[Extract].[Random]' />
+            <map key='[Row]' value='[Extract].[Row]' />
+            <map key='[Space]' value='[Extract].[Space]' />
+            <map key='[State (State Map_Full Data.csv)]' value='[Extract].[State]' />
+            <map key='[State]' value='[Extract].[State1]' />
+            <map key='[Sub-issue]' value='[Extract].[Sub-issue]' />
+            <map key='[Sub-product]' value='[Extract].[Sub-product]' />
+            <map key='[Submitted via]' value='[Extract].[Submitted via]' />
+            <map key='[Tags]' value='[Extract].[Tags]' />
+            <map key='[Target]' value='[Extract].[Target]' />
+            <map key='[Time to Receipt]' value='[Extract].[Time to Receipt]' />
+            <map key='[Timely response?]' value='[Extract].[Timely response?]' />
+            <map key='[ZIP code]' value='[Extract].[ZIP code]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company</remote-alias>
+              <ordinal>0</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company public response</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company public response]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company public response</remote-alias>
+              <ordinal>1</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company response to consumer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company response to consumer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company response to consumer</remote-alias>
+              <ordinal>2</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Complaint ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Complaint ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Complaint ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72431</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consumer consent provided?</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Consumer consent provided?]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consumer consent provided?</remote-alias>
+              <ordinal>4</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consumer disputed?</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Consumer disputed?]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consumer disputed?</remote-alias>
+              <ordinal>5</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Received</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Received]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Received</remote-alias>
+              <ordinal>6</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>7905</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Submitted</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Submitted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Submitted</remote-alias>
+              <ordinal>7</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8451</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Issue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Issue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Issue</remote-alias>
+              <ordinal>8</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product</remote-alias>
+              <ordinal>9</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State1</remote-alias>
+              <ordinal>10</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub-issue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub-issue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub-issue</remote-alias>
+              <ordinal>11</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>307</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub-product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub-product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub-product</remote-alias>
+              <ordinal>12</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Submitted via</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Submitted via]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Submitted via</remote-alias>
+              <ordinal>13</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tags</remote-alias>
+              <ordinal>14</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Timely response?</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Timely response?]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Timely response?</remote-alias>
+              <ordinal>15</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZIP code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ZIP code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ZIP code</remote-alias>
+              <ordinal>16</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11073</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>All Complaints (Selected)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[All Complaints (Selected)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>All Complaints (Selected)</remote-alias>
+              <ordinal>17</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Complaints</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Complaints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Complaints</remote-alias>
+              <ordinal>18</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target</remote-alias>
+              <ordinal>19</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time to Receipt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Time to Receipt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time to Receipt</remote-alias>
+              <ordinal>20</ordinal>
+              <family>complaints_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>183</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Abbreviation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Abbreviation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Abbreviation</remote-alias>
+              <ordinal>21</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State (State Map_Full Data.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>22</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>23</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>One</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[One]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>One</remote-alias>
+              <ordinal>24</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Random</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Random]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Random</remote-alias>
+              <ordinal>25</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Row</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Row]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Row</remote-alias>
+              <ordinal>26</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Space</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Space]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Space</remote-alias>
+              <ordinal>27</ordinal>
+              <family>State Map_Full Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[diff:sum:Number of Complaints:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[pcto:sum:Number of Complaints:qk]&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[usr:Calculation_5066560737918978:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Product Group]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;OTHERS&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;MORTGAGE&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;BANK SERVICES&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;CREDIT CARD&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;CHECKING/SERVICES&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Sri Lanka&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='complaints_Full Data.csv' id='complaints_Full Data.csv_BE3E01DC5D83427BA2D049245429E10F'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[complaints_Full Data.csv].[State]' />
+                    <expression op='[State Map_Full Data.csv].[Abbreviation]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.1819h27102gt3d0zy2bkf035biw4' name='complaints_Full Data.csv' table='[complaints_Full Data#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='Company' ordinal='0' />
+                    <column datatype='string' name='Company public response' ordinal='1' />
+                    <column datatype='string' name='Company response to consumer' ordinal='2' />
+                    <column datatype='integer' name='Complaint ID' ordinal='3' />
+                    <column datatype='string' name='Consumer consent provided?' ordinal='4' />
+                    <column datatype='string' name='Consumer disputed?' ordinal='5' />
+                    <column datatype='date' name='Date Received' ordinal='6' />
+                    <column datatype='date' name='Date Submitted' ordinal='7' />
+                    <column datatype='string' name='Issue' ordinal='8' />
+                    <column datatype='string' name='Product' ordinal='9' />
+                    <column datatype='string' name='State' ordinal='10' />
+                    <column datatype='string' name='Sub-issue' ordinal='11' />
+                    <column datatype='string' name='Sub-product' ordinal='12' />
+                    <column datatype='string' name='Submitted via' ordinal='13' />
+                    <column datatype='string' name='Tags' ordinal='14' />
+                    <column datatype='string' name='Timely response?' ordinal='15' />
+                    <column datatype='string' name='ZIP code' ordinal='16' />
+                    <column datatype='integer' name='All Complaints (Selected)' ordinal='17' />
+                    <column datatype='integer' name='Number of Complaints' ordinal='18' />
+                    <column datatype='integer' name='Target' ordinal='19' />
+                    <column datatype='integer' name='Time to Receipt' ordinal='20' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1819h27102gt3d0zy2bkf035biw4' name='State Map_Full Data.csv' table='[State Map_Full Data#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='Abbreviation' ordinal='0' />
+                    <column datatype='string' name='State' ordinal='1' />
+                    <column datatype='integer' name='Number of Records' ordinal='2' />
+                    <column datatype='integer' name='One' ordinal='3' />
+                    <column datatype='real' name='Random' ordinal='4' />
+                    <column datatype='integer' name='Row' ordinal='5' />
+                    <column datatype='integer' name='Space' ordinal='6' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='% of Complaints'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complaints_Full Data+' name='federated.0ywrv5d14jgfr3128e8pb0oj93sj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ywrv5d14jgfr3128e8pb0oj93sj'>
+            <column caption='MIN(1.0)' datatype='real' name='[Calculation_5066560737918978]' role='measure' type='quantitative' user:unnamed='% of Complaints'>
+              <calculation class='tableau' formula='MIN(1.0)' />
+            </column>
+            <column datatype='integer' name='[Number of Complaints]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product Group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Product]' new-bin='true'>
+                <bin default-name='false' value='&quot;BANK SERVICES&quot;'>
+                  <value>&quot;Bank account or service&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;CHECKING/SERVICES&quot;'>
+                  <value>&quot;Checking or savings account&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;CREDIT CARD&quot;'>
+                  <value>&quot;Credit card&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;MORTGAGE&quot;'>
+                  <value>&quot;Mortgages&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;OTHERS&quot;'>
+                  <value>&quot;Credit card or prepaid card&quot;</value>
+                  <value>&quot;Debt Collection&quot;</value>
+                  <value>&quot;Student loan&quot;</value>
+                  <value>&quot;Vehicle loan or lease&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Complaints]' derivation='Sum' name='[pcto:sum:Number of Complaints:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_5066560737918978]' derivation='User' name='[usr:Calculation_5066560737918978:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[pcto:sum:Number of Complaints:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[pcto:sum:Number of Complaints:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[usr:Calculation_5066560737918978:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group] * ([federated.0ywrv5d14jgfr3128e8pb0oj93sj].[usr:Calculation_5066560737918978:qk] + [federated.0ywrv5d14jgfr3128e8pb0oj93sj].[pcto:sum:Number of Complaints:qk]))</cols>
+      </table>
+      <simple-id uuid='{B907269D-E0C0-4996-9F05-3C891EB6E0B8}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complaints_Full Data+' name='federated.0ywrv5d14jgfr3128e8pb0oj93sj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ywrv5d14jgfr3128e8pb0oj93sj'>
+            <column datatype='integer' name='[Number of Complaints]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product Group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Product]' new-bin='true'>
+                <bin default-name='false' value='&quot;BANK SERVICES&quot;'>
+                  <value>&quot;Bank account or service&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;CHECKING/SERVICES&quot;'>
+                  <value>&quot;Checking or savings account&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;CREDIT CARD&quot;'>
+                  <value>&quot;Credit card&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;MORTGAGE&quot;'>
+                  <value>&quot;Mortgages&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;OTHERS&quot;'>
+                  <value>&quot;Credit card or prepaid card&quot;</value>
+                  <value>&quot;Debt Collection&quot;</value>
+                  <value>&quot;Student loan&quot;</value>
+                  <value>&quot;Vehicle loan or lease&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Complaints]' derivation='Sum' name='[pcto:sum:Number of Complaints:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Complaints]' derivation='Sum' name='[sum:Number of Complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[sum:Number of Complaints:qk]' />
+              <text column='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]' />
+              <text column='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[pcto:sum:Number of Complaints:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='16'><![CDATA[<[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[sum:Number of Complaints:qk]> | ]]></run>
+                <run fontcolor='#333333' fontname='Tableau Semibold'><![CDATA[<[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[pcto:sum:Number of Complaints:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#0055ff' fontname='tabluau semibold' fontsize='11'><![CDATA[<[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]</cols>
+      </table>
+      <simple-id uuid='{4CB7BBB9-775C-4B1D-8BF4-58ECDA935385}' />
+    </worksheet>
+    <worksheet name='Total KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='complaints_Full Data+' name='federated.0ywrv5d14jgfr3128e8pb0oj93sj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ywrv5d14jgfr3128e8pb0oj93sj'>
+            <column datatype='integer' name='[Number of Complaints]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Complaints]' derivation='Sum' name='[sum:Number of Complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[sum:Number of Complaints:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='16'><![CDATA[<[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[sum:Number of Complaints:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#0055ff' fontname='Tableau Semibold' fontsize='11'>TOTAL COMPLAINTS</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{070F8C51-5909-4DA9-A421-813CBAB091D1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]</field>
+            <field>[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[none:Product:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F721A1AC-5D3B-4739-A191-88F090765E64}' />
+    </window>
+    <window class='worksheet' name='Total KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DA03597E-0EDD-4CDF-9C17-28D6B86B5DCD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='% of Complaints'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[:Measure Names]' type='color' />
+            <card pane-specification-id='1' param='[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ywrv5d14jgfr3128e8pb0oj93sj].[Product Group]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{789E608F-89AD-45FC-8693-F1C112FFE9A5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='174' name='% of Complaints' width='192'>
+      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
+      UTT/D1CYAn2q2WtbAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='KPI' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total KPI' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACTklEQVR4nO3dsW1CQRBAwQW5ChqgD1pxby7EogcCYkRGAcjiHNADP3gz0YWbPGk3ut1a
+      aw1E7bceALYkANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZD2tfUA8Gm/l5nb4/0WADnX+8zPeWYtARD0fZp5/s28Xm4A4gRA
+      mhWIpOPhfQPs/A9AmRWINAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIO0f
+      ZkIY62LIP3wAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
